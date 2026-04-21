@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <radialGradient id="flashlight" cx="25%" cy="25%" r="75%">
+      <stop offset="0%" style="stop-color:#3d2914;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a0f05;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0505;stop-opacity:1" />
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000"/>
+    </filter>
+  </defs>
+
+  <!-- Dark background with flashlight effect -->
+  <rect width="800" height="600" fill="#0a0505"/>
+  <ellipse cx="350" cy="280" rx="380" ry="280" fill="url(#flashlight)"/>
+
+  <!-- Old paper texture background -->
+  <rect x="120" y="80" width="560" height="440" fill="#c4b080" rx="3" filter="url(#shadow)"/>
+  <rect x="120" y="80" width="560" height="440" fill="none" stroke="#8b7355" stroke-width="4" rx="3"/>
+
+  <!-- Burnt/worn edges effect -->
+  <ellipse cx="125" cy="85" rx="15" ry="10" fill="#5c4033" opacity="0.6"/>
+  <ellipse cx="675" cy="515" rx="20" ry="12" fill="#5c4033" opacity="0.6"/>
+  <ellipse cx="680" cy="85" rx="12" ry="8" fill="#3d2914" opacity="0.5"/>
+
+  <!-- Title -->
+  <text x="400" y="115" font-family="serif" font-size="16" fill="#3d2914" text-anchor="middle" font-weight="bold">━━━━━━━━━━ 文化宫及周边 ━━━━━━━━━━</text>
+
+  <!-- Red circled locations -->
+  <!-- 1. Basement -->
+  <circle cx="220" cy="200" r="30" fill="none" stroke="#8b0000" stroke-width="3"/>
+  <circle cx="220" cy="200" r="25" fill="#8b000015"/>
+  <text x="220" y="195" font-family="serif" font-size="9" fill="#5c0000" text-anchor="middle">地下室</text>
+  <text x="220" y="207" font-family="serif" font-size="7" fill="#8b0000" text-anchor="middle">入口</text>
+
+  <!-- 2. Morning market -->
+  <circle cx="400" cy="250" r="30" fill="none" stroke="#8b0000" stroke-width="3"/>
+  <circle cx="400" cy="250" r="25" fill="#8b000015"/>
+  <text x="400" y="248" font-family="serif" font-size="9" fill="#5c0000" text-anchor="middle">早市</text>
+  <text x="400" y="260" font-family="serif" font-size="7" fill="#8b0000" text-anchor="middle">西三摊</text>
+
+  <!-- 3. Old theater -->
+  <circle cx="580" cy="340" r="30" fill="none" stroke="#8b0000" stroke-width="3"/>
+  <circle cx="580" cy="340" r="25" fill="#8b000015"/>
+  <text x="580" y="338" font-family="serif" font-size="9" fill="#5c0000" text-anchor="middle">电影院</text>
+  <text x="580" y="350" font-family="serif" font-size="7" fill="#8b0000" text-anchor="middle">废墟</text>
+
+  <!-- 4. Old locust tree - THE MOST IMPORTANT -->
+  <circle cx="350" cy="420" r="40" fill="none" stroke="#8b0000" stroke-width="4"/>
+  <circle cx="350" cy="420" r="35" fill="#8b000020"/>
+  <!-- Tree symbol -->
+  <path d="M350 400 L350 440 M330 420 L370 420 M340 410 L360 430 M360 410 L340 430" stroke="#3d2914" stroke-width="2"/>
+  <text x="350" y="475" font-family="serif" font-size="11" fill="#5c0000" text-anchor="middle" font-weight="bold">老槐树</text>
+  <text x="350" y="488" font-family="serif" font-size="8" fill="#8b0000" text-anchor="middle" font-style="italic">"她在这里"</text>
+
+  <!-- Path lines connecting locations -->
+  <path d="M220 200 Q 300 200 400 250" stroke="#5c4033" stroke-width="1.5" stroke-dasharray="6,4" fill="none"/>
+  <path d="M400 250 Q 500 280 580 340" stroke="#5c4033" stroke-width="1.5" stroke-dasharray="6,4" fill="none"/>
+  <path d="M400 250 Q 380 320 350 420" stroke="#5c4030" stroke-width="1.5" stroke-dasharray="6,4" fill="none"/>
+
+  <!-- Culture Palace label -->
+  <rect x="160" y="155" width="80" height="22" fill="#d4c4a0" stroke="#8b7355" rx="2"/>
+  <text x="200" y="170" font-family="sans-serif" font-size="10" fill="#3d2914" text-anchor="middle">文化宫</text>
+
+  <!-- The MOST HORRIFYING part: The numbers -->
+  <!-- Number background with dark glow -->
+  <rect x="480" y="400" width="180" height="100" fill="#8b000020" rx="5"/>
+  <rect x="485" y="405" width="170" height="90" fill="none" stroke="#8b0000" stroke-width="2" rx="3"/>
+
+  <!-- The ominous numbers with supernatural glow -->
+  <text x="570" y="455" font-family="serif" font-size="42" font-weight="bold" fill="#6b0000" text-anchor="middle" filter="url(#glow)">12210301</text>
+
+  <!-- Subtle blood drip effect under numbers -->
+  <path d="M545 465 Q 550 475 555 465 Q 560 480 565 465" stroke="#5c0000" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M575 468 Q 580 478 585 468" stroke="#5c0000" stroke-width="1" fill="none" opacity="0.5"/>
+
+  <!-- Annotations -->
+  <text x="570" y="520" font-family="serif" font-size="9" fill="#5c4033" text-anchor="middle">━━━━━━━━━━</text>
+  <text x="570" y="535" font-family="serif" font-size="8" fill="#5c4033" text-anchor="middle">朱砂墨 · 手电筒斜照</text>
+
+  <!-- Decorative elements -->
+  <text x="135" y="530" font-family="serif" font-size="8" fill="#8b7355" opacity="0.7">李记，可信？</text>
+  <text x="610" y="280" font-family="serif" font-size="8" fill="#8b7355" opacity="0.7">镜中之门</text>
+  <text x="175" y="235" font-family="serif" font-size="7" fill="#8b0000" opacity="0.8">勿入</text>
+
+  <!-- Compass rose -->
+  <g transform="translate(145, 500)">
+    <circle cx="0" cy="0" r="20" fill="#c4b080" stroke="#8b7355"/>
+    <text x="0" y="-8" font-size="8" fill="#3d2914" text-anchor="middle">北</text>
+    <path d="M0 -15 L3 0 L0 5 L-3 0 Z" fill="#8b0000"/>
+    <text x="0" y="15" font-size="6" fill="#5c4033" text-anchor="middle">S</text>
+  </g>
+
+  <!-- Bottom corner fold effect -->
+  <path d="M660 500 L680 520 L680 500 Z" fill="#a08060"/>
+  <path d="M660 500 L680 520 L660 520 Z" fill="#8b7355"/>
+</svg>

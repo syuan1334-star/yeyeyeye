@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <radialGradient id="lamp" cx="50%" cy="20%" r="70%">
+      <stop offset="0%" style="stop-color:#ffe4b5;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#ffe4b5;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="#3d2a1f" width="300" height="300"/>
+  <rect fill="url(#lamp)" width="300" height="300"/>
+  <rect x="40" y="140" width="220" height="150" fill="#2a1f15" rx="3"/>
+  <rect x="50" y="150" width="200" height="130" fill="#f5e6d3"/>
+  <line x1="150" y1="180" x2="150" y2="250" stroke="#d4c4a8" stroke-width="1"/>
+  <ellipse cx="150" cy="220" rx="30" ry="20" fill="#8b7355"/>
+  <circle cx="120" cy="100" r="35" fill="#e8d5c4"/>
+  <circle cx="180" cy="100" r="35" fill="#e8d5c4"/>
+  <circle cx="150" cy="80" r="40" fill="#e8d5c4"/>
+  <path d="M110 80 Q125 60 150 55 Q175 60 190 80" fill="#2a1a3a"/>
+  <circle cx="138" cy="78" r="5" fill="#2a1a3a"/>
+  <circle cx="162" cy="78" r="5" fill="#2a1a3a"/>
+  <path d="M142 95 Q150 102 158 95" stroke="#c4a080" stroke-width="2" fill="none"/>
+  <text x="150" y="285" text-anchor="middle" fill="#a08060" font-size="11">咖啡馆时光</text>
+</svg>
